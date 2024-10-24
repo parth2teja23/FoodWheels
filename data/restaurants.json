@@ -1,0 +1,23 @@
+{
+    "restaurants": [
+      {
+        "id": 1,
+        "name": "Pizza House",
+        "cuisine": "Italian",
+        "menu": [
+          {"id": 1, "name": "Margherita Pizza", "price": 8.99},
+          {"id": 2, "name": "Pepperoni Pizza", "price": 9.99}
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Sushi World",
+        "cuisine": "Japanese",
+        "menu": [
+          {"id": 1, "name": "California Roll", "price": 6.99},
+          {"id": 2, "name": "Tuna Sashimi", "price": 12.99}
+        ]
+      }
+    ]
+  }
+  
