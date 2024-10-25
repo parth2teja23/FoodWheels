@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     <div class="card-body">
       <h5 class="card-title mt-3">${restaurant.name}</h5>
       <p class="card-text">${restaurant.cuisine}</p>
-      <a href="menu.html?restaurantId=${restaurant.id}" class="btn btn-primary">View Menu</a>
+      <a href="menu.html?restaurantId=${restaurant.id}" class="btn btn-warning">View Menu</a>
     </div>
   </div>
 </div>
