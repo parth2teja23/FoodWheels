@@ -1,22 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food Delivery</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/auth.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', checkAuth);
-</script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FoodWheels brings delicious food to your doorstep. Order now!"
+    />
+    <meta
+      name="keywords"
+      content="food delivery, pizza, burgers, coffee, salads"
+    />
+    <title>FoodWheels</title>
 
-</head>
-<body>
-  <header class="bg-dark text-white text-center p-5">
-    <h1>Welcome to Food Delivery</h1>
-    <p>Find the best restaurants and get your food delivered fast!</p>
-    <a href="restaurants.html" class="btn btn-primary mt-3">Browse Restaurants</a>
-  </header>
-</body>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: beige;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        background: beige;
+      }
+      .navbar-brand img {
+        height: 50px;
+      }
+      .content h1 {
+        font-size: 2.5rem;
+      }
+      .content h1 span {
+        color: rgb(255, 208, 0);
+        font-size: 3rem;
+        font-weight: 800;
+      }
+      .content p {
+        font-size: 1.2rem;
+      }
+      .content button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        background-color: rgb(3, 7, 73);
+        color: beige;
+        border: none;
+        border-radius: 10px;
+        transition: 0.3s;
+      }
+      .content button:hover {
+        color: rgb(3, 7, 73);
+        background-color: transparent;
+        border: 2px solid rgb(3, 7, 73);
+      }
+      .image img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .img-links img {
+        width: 80px;
+        height: 80px;
+        transition: 0.3s ease-in-out;
+      }
+      .img-links a:hover img {
+        transform: translateY(-10px);
+      }
+      @media (max-width: 768px) {
+        .content h1 {
+          font-size: 2rem;
+        }
+        .content h1 span {
+          font-size: 2.5rem;
+        }
+        .content p {
+          font-size: 1rem;
+        }
+      }
+      .shrunk {
+        width: 60px;
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/images/logo-cropped.png" alt="FoodWheels Logo" />
+          <span class="ms-2">FoodWheels</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="restaurants.html"
+                >Explore Restaurants</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup.html">Signup</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="container my-5">
+      <div class="row align-items-center">
+        <!-- Text Content -->
+        <div class="col-md-6 text-center text-md-start">
+          <div class="content">
+            <h1>Delicious food at your <span>doorstep</span></h1>
+            <p>
+              FoodWheels brings your favorite meals right to you. Fast, fresh,
+              and always delicious.
+            </p>
+            <a href="restaurants.html"><button>ORDER NOW</button></a>
+          </div>
+        </div>
+
+        <!-- Image Area -->
+        <div class="col-md-6 text-center">
+          <div class="image">
+            <div class="box active" id="largeImageContainer">
+              <img
+                src="images/images/pizza-png-removebg-preview.png"
+                alt="Large Food Image"
+                id="largeImage"
+                style="cursor: pointer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Links -->
+    <div class="container text-center">
+      <div class="row img-links">
+        <div class="col">
+          <a onclick="changeImage(0)"
+            ><img
+              src="images/images/pizza-png-removebg-preview.png"
+              alt="Pizza"
+          /></a>
+        </div>
+        <div class="col">
+          <a onclick="changeImage(1)"
+            ><img src="images/images/burger.png" alt="Burger"
+          /></a>
+        </div>
+        <div class="col">
+          <a onclick="changeImage(2)"
+            ><img src="images/images/coffee2.webp" alt="Coffee"
+          /></a>
+        </div>
+        <div class="col">
+          <a onclick="changeImage(3)"
+            ><img src="images/images/food3-removebg-preview.png" alt="Salad"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript to handle image transitions -->
+    <script>
+      // Array of image paths
+      const images = [
+        "images/images/pizza-png-removebg-preview.png",
+        "images/images/burger.png",
+        "images/images/coffee2.webp",
+        "images/food3-removebg-preview.png",
+      ];
+
+      // Array of corresponding page links
+      const pages = ["pizza.html", "burger.html", "coffee.html", "salad.html"];
+
+      function changeImage(index) {
+        // Change the large image based on index
+        document.getElementById("largeImage").src = images[index];
+
+        // Reset all images to normal size
+        const imageLinks = document.querySelectorAll(".img-links img");
+        imageLinks.forEach((img) => img.classList.remove("shrunk"));
+
+        // Shrink the clicked image
+        imageLinks[index].classList.add("shrunk");
+
+        // Set the onclick event for the large image
+        const largeImage = document.getElementById("largeImage");
+        largeImage.onclick = function () {
+          window.location.href = pages[index]; // Redirect to the corresponding page
+        };
+      }
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
