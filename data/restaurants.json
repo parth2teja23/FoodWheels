@@ -38,12 +38,24 @@
         "name": "South Point",
         "cuisine": "South Indian",
         "menu": [
-          {"id": 1, "name": "Masala Dosa", "price": 6.99},
-          {"id": 2, "name": "Uttapam", "price": 12.99},
-          {"id": 3, "name": "Idly Sambar", "price": 12.99},
-          {"id": 4, "name": "Medu Vada", "price": 12.99},
-          {"id": 5, "name": "Vada Pav", "price": 12.99},
-          {"id": 6, "name": "Appam", "price": 12.99}
+          {"id": 1,
+          "image": "https://images.pexels.com/photos/20422126/pexels-photo-20422126/free-photo-of-meal-on-plate-and-bowls-of-sauces-around.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "name": "Masala Dosa", "price": 99},
+          {"id": 2,
+          "image": "https://images.pexels.com/photos/20422126/pexels-photo-20422126/free-photo-of-meal-on-plate-and-bowls-of-sauces-around.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "name": "Uttapam", "price": 129},
+          {"id": 3,
+          "image": "https://images.pexels.com/photos/20422126/pexels-photo-20422126/free-photo-of-meal-on-plate-and-bowls-of-sauces-around.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "name": "Idly Sambar", "price": 79},
+          {"id": 4,
+          "image": "https://images.pexels.com/photos/20422126/pexels-photo-20422126/free-photo-of-meal-on-plate-and-bowls-of-sauces-around.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "name": "Medu Vada", "price": 59},
+          {"id": 5,
+          "image": "https://images.pexels.com/photos/20422126/pexels-photo-20422126/free-photo-of-meal-on-plate-and-bowls-of-sauces-around.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "name": "Vada Pav", "price": 69},
+          {"id": 6,
+          "image": "https://images.pexels.com/photos/20422126/pexels-photo-20422126/free-photo-of-meal-on-plate-and-bowls-of-sauces-around.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "name": "Appam", "price": 79}
         ]
       }
     ]

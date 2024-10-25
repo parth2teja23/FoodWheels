@@ -21,7 +21,7 @@ function loadCartItems() {
           <div class="card-body d-flex justify-content-between">
             <div>
               <h5 class="card-title">${item.name}</h5>
-              <p class="card-text">Price: $${item.price.toFixed(2)}</p>
+              <p class="card-text">Price: ₹${item.price.toFixed(2)}</p>
             </div>
             <button class="btn btn-danger" onclick="removeFromCart(${index})">Remove</button>
           </div>
